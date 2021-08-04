@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileBio } from 'src/app/model/ProfileBio';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-profile-card',
@@ -7,6 +8,7 @@ import { ProfileBio } from 'src/app/model/ProfileBio';
   styleUrls: ['./profile-card.component.css'],
 })
 export class ProfileCardComponent implements OnInit {
+  faCoffee = faCoffee;
   bio: ProfileBio;
 
   constructor() {

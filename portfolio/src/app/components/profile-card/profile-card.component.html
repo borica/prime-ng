@@ -1,4 +1,4 @@
-<p-card>
+<p-card styleClass="main-card">
   <div class="col-12 flex justify-content-center flex-wrap">
     <img class="profile-img" [src]="bio.image" />
   </div>
@@ -8,27 +8,34 @@
   <div class="col-12 mt-2">
     <p class="profile-bio">{{ bio.bio }}</p>
   </div>
-  <div class="col-12 mt-3 flex justify-content-center flex-wrap">
+  <div
+    class="col-12 mt-3 flex justify-content-center flex-wrap no-label-button"
+  >
     <button
       pButton
       pRipple
       type="button"
-      icon="pi pi-check"
       class="p-button-rounded p-button-outlined mr-2"
-    ></button>
+    >
+      <ion-icon class="icon-font-size" name="logo-linkedin"></ion-icon>
+    </button>
+    <button
+      pButton
+      pRipple
+      label=""
+      type="button"
+      class="p-button-rounded p-button-outlined mr-2"
+    >
+      <ion-icon class="icon-font-size" name="logo-twitter"></ion-icon>
+    </button>
     <button
       pButton
       pRipple
       type="button"
-      icon="pi pi-check"
-      class="p-button-rounded p-button-outlined mr-2"
-    ></button>
-    <button
-      pButton
-      type="button"
-      icon="pi pi-check"
-      class="p-button-rounded p-button-outlined mr-2"
-    ></button>
+      class="p-button-rounded p-button-outlined mr"
+    >
+      <ion-icon class="icon-font-size" name="logo-instagram"></ion-icon>
+    </button>
   </div>
   <p-divider></p-divider>
   <div class="col-12">
@@ -37,7 +44,8 @@
       pRipple
       type="button"
       label="C O M M I S I O N S "
-      class="p-button-text w-full"
+      class="p-button-text w-full mt-3"
+      routerLink="/home"
     ></button>
   </div>
 </p-card>
